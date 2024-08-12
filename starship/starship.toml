@@ -1,0 +1,36 @@
+# エディターの補完を設定スキーマに合わせて取得
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = '$all'
+
+add_newline = true
+
+[character]
+success_symbol = '[❯](bold green)'
+
+[package]
+disabled = false
+
+[kubernetes]
+disabled = false
+
+[time]
+utc_time_offset = '9'
+disabled = true
+
+[os]
+format = "on [($name )]($style)"
+style = "bold blue"
+disabled = true
+
+[memory_usage]
+disabled = false
+threshold = -1
+symbol = ''
+style = 'bold dimmed green'
+
+[localip]
+ssh_only = false
+format = '@[$localipv4](bold red) '
+disabled = false
+
